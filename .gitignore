@@ -1,0 +1,17 @@
+# OS X
+.DS_Store
+
+# Dreamweaver I think
+_notes/
+
+# composer
+lib/composer/vendor/
+
+# cuz
+.ftpconfig
+.vscode/*
+.htaccess
+index.php
+
+#wordpress
+wp-config.php

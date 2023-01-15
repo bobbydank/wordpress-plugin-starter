@@ -1,0 +1,611 @@
+:root {
+    --primary: #1c75bd;
+}
+
+.main_container.add_new form {
+    max-width:1000px;
+}
+
+.main_container.add_new section {
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom:solid thin #666;
+}
+
+@media (min-width:768px) {
+    .main_container.add_new section.top {
+        display:flex;
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+    .main_container.add_new section.top > div {
+        flex: 1 0 calc(50% - 20px);
+    }
+}
+
+/* Forms
+   ========================================================================== */
+.main_container label {
+    display: block;
+    line-height: 1;
+    font-size:1.15rem;
+    margin:1rem 0;
+    font-weight:bold;
+    vertical-align: middle;
+}
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+.main_container button,
+.main_container input,
+.main_container optgroup,
+.main_container select,
+.main_container textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 1rem;
+    /* 1 */
+    line-height: 1.5;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+.main_container input[type="text"],
+.main_container input[type="date"],
+.main_container input[type="email"],
+.main_container input[type="number"],
+.main_container input[type="password"],
+.main_container input[type="search"],
+.main_container input[type="tel"],
+.main_container input[type="url"],
+.main_container select,
+.main_container select option,
+.main_container textarea {
+    width: 100%;
+    /*max-width:25rem;*/
+    max-width: 100%;
+    border: solid 1px #333;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.main_container select {
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+
+.main_container select.small {
+    padding: 0.2rem .7rem 0.2rem .5rem;
+}
+
+.main_container input[type="search"].large {
+    font-size:1.35rem;
+    padding:1rem 2rem;
+}
+
+.main_container input[type="text"]::placeholder,
+.main_container input[type="date"]::placeholder,
+.main_container input[type="email"]::placeholder,
+.main_container input[type="number"]::placeholder,
+.main_container input[type="password"]::placeholder,
+.main_container input[type="search"]::placeholder,
+.main_container input[type="tel"]::placeholder,
+.main_container input[type="url"]::placeholder {
+    color:#ccc;
+}
+
+.main_container input[type="text"]:focus,
+.main_container input[type="date"]:focus,
+.main_container input[type="email"]:focus,
+.main_container input[type="number"]:focus,
+.main_container input[type="password"]:focus,
+.main_container input[type="search"]:focus,
+.main_container input[type="tel"]:focus,
+.main_container input[type="url"]:focus,
+.main_container select:focus,
+.main_container textarea:focus {
+    border-color: #333333;
+    outline: 0 none;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+.main_container button,
+.main_container input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+.main_container button,
+.main_container select {
+    /* 1 */
+    /*text-transform: none;*/
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+.main_container button,
+.main_container [type="button"],
+.main_container [type="reset"],
+.main_container [type="submit"] {
+    width: auto;
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+.main_container button::-moz-focus-inner,
+.main_container [type="button"]::-moz-focus-inner,
+.main_container [type="reset"]::-moz-focus-inner,
+.main_container [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+.main_container button:-moz-focusring,
+.main_container [type="button"]:-moz-focusring,
+.main_container [type="reset"]:-moz-focusring,
+.main_container [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+.main_container button,
+.main_container [type="submit"],
+.main_container [type="button"] {
+    display: inline-block;
+    color: var(--primary, #CC3366);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid var(--primary, #CC3366);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.main_container button.small,
+.main_container [type="submit"].small,
+.main_container [type="button"].small {
+    padding: 0.05rem 0.35rem;
+    display:inline-block;
+    font-size:0.9rem;
+}
+
+.main_container [type="submit"] {
+    display:block;
+    font-size:1.5rem;
+    width:100%;
+}
+
+.main_container button:focus,
+.main_container [type="submit"]:focus,
+.main_container [type="button"]:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.main_container button:hover, 
+.main_container button:focus,
+.main_container [type="submit"]:hover,
+.main_container [type="submit"]:focus,
+.main_container [type="button"]:hover,
+.main_container [type="button"]:focus {
+    color: #ffffff;
+    background-color: var(--primary, #CC3366);
+    text-decoration: none;
+}
+
+.main_container button:not(:disabled),
+.main_container [type="submit"]:not(:disabled),
+.main_container [type="button"]:not(:disabled) {
+    cursor: pointer;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+ .main_container fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+ .main_container legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+ .main_container progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+ .main_container textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+ .main_container [type="checkbox"],
+ .main_container [type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+ .main_container [type="number"]::-webkit-inner-spin-button,
+ .main_container [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+ .main_container [type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+ .main_container [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+ .main_container ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+.main_container select {
+    display: block;
+}
+
+.main_container .fb-flex-cont {display:flex; justify-content:flex-start; align-items:flex-start; gap:0 10px; margin-bottom:10px;}
+.main_container .fb-flex-cont label {margin:0; font-weight: normal; line-height:1.25em;}
+.main_container .fb-flex-cont input {margin-top:4px;}
+
+@media (min-width:768px) {
+    .main_container .checkbox-container {
+        display:flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    .main_container .checkbox-container > divv {
+        flex:1 0 calc(50% - 20px);
+    }
+}
+
+/* Flex Table
+   ========================================================================== */
+
+.main-flex-table {
+    font-size: 16px;
+}
+
+.main-flex-table > li {
+    margin-bottom: 20px;
+}
+
+.main-flex-table > li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.main-flex-table .head {
+    text-align: center;
+    text-transform: uppercase;
+    display:none;
+    background-color: #ccc;
+    font-weight: bold;
+    border-top:solid thin #ccc;
+}
+
+@media (max-width:768px) {
+    .main-flex-table .entry > li:first-child {
+        font-weight: bold;
+    }
+
+    .main-flex-table .entry {
+        cursor: pointer;
+        text-align: center;
+        padding:15px 0;
+    }
+}
+
+@media (min-width:768px) {
+    .main-flex-table > li {
+        margin-bottom: 0;
+    }
+
+    .main-flex-table .entry {
+        display:flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .main-flex-table .entry > li {
+        flex:1;
+        padding:5px 15px;
+        border-right:solid thin #ccc;
+        border-bottom:solid thin #ccc;
+        margin-bottom:0;
+    }
+
+    .main-flex-table .entry > li:first-child {
+        border-left:solid thin #ccc;
+    }
+}
+
+
+/* Table
+   ========================================================================== */
+
+.main_container table {
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.0em;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.main_container table th,
+.main_container table td {
+    padding: 15px;
+    line-height: 1.5;
+    font-size:1.0rem;
+    vertical-align: top;
+    border: 1px solid #cccccc;
+}
+
+.main_container table th {
+    font-weight: bold;
+}
+
+.main_container table thead th,
+.main_container table tfoot th {
+    text-transform: uppercase;
+}
+
+.main_container table caption + thead tr:first-child th,
+.main_container table caption + thead tr:first-child td,
+.main_container table caption + thead tr:first-child th,
+.main_container table caption + thead tr:first-child td,
+.main_container table colgroup + thead tr:first-child th,
+.main_container table colgroup + thead tr:first-child td,
+.main_container table colgroup + thead tr:first-child th,
+.main_container table colgroup + thead tr:first-child td,
+.main_container table thead:first-child tr:first-child th,
+.main_container table thead:first-child tr:first-child td,
+.main_container table thead:first-child tr:first-child th,
+.main_container table thead:first-child tr:first-child td {
+    border-top: 1px solid #cccccc;
+}
+
+.main_container table tbody > tr:nth-child(odd) > td,
+.main_container table tbody > tr:nth-child(odd) > th {
+    background-color: #f7f7f7;
+}
+
+.main_container table tbody + tbody {
+    border-top: 2px solid #cccccc;
+}
+
+@media (max-width: 767px) {
+    .main_container table table {
+        font-size: 0.8em;
+    }
+
+    .main_container table table th,
+    .main_container table table td {
+        padding: 7px;
+        line-height: 1.3;
+    }
+
+    .main_container table table th {
+        font-weight: 400;
+    }
+}
+
+.main_container .select.inline {
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main_container .select.inline label {
+    margin-right:20px;
+}
+
+
+/* Search Form
+   ========================================================================== */
+
+.main-search-form {
+    width:100%;
+    max-width:700px !important;
+    margin:0 auto 75px;
+    padding:50px 75px;
+    border:solid thin #333;
+    background-color: white;
+}
+
+.main-search-form input[type="search"] {
+    margin-bottom:20px;
+}
+
+.main-search-form .submit {
+    padding:0;
+    margin-top:50px;
+    text-align: center;
+}
+
+.main-search-form .submit input[type="submit"] {
+    font-size:1rem;
+    display:inline-block;
+    width:auto;
+    text-transform: uppercase;
+    width:100%;
+    max-width:200px;
+}
+
+.form-location {
+    margin:15px 0;
+    font-size:1rem;
+    padding:15px;
+    border:solid thin #ccc;
+    border-radius: 15px;
+}
+
+.form-location p {
+    font-style: italic;
+}
+
+.form-location span {
+    font-style: normal;
+}
+
+/* Pagination
+   ========================================================================== */
+
+.main_container .pagination {
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    gap:5px;
+}
+
+body.wp-admin .main_container .pagination {
+    padding-right:30px;
+}
+
+.main_container .pagination li:nth-child(2) {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+@media (min-width:768px) {
+    .main_container .search-pagination {
+        display:flex;
+        align-items: center;
+        min-height:70px;
+    }
+
+    .main_container .search-pagination > * {
+        flex:1;
+    }
+
+    .main_container .search-pagination p {
+        margin-bottom: 0;
+    }
+    
+    .main_container .search-pagination .counter {
+        color:#666;
+    }
+    
+    .main_container .search-pagination .counter p {
+        font-size:0.9rem;
+    }
+}
+
+/* View Job
+   ========================================================================== */
+
+.job-viewer {
+    margin:0 auto;
+    max-width:1200px;
+}
+
+@media (min-width:768px) {
+    .job-viewer .job-viewer-info {
+        display:flex;
+    }
+
+    .job-viewer .job-viewer-info .job-viewer-image {
+        width:30%;
+        padding-right:50px;
+    }
+
+    .job-viewer .job-viewer-info .job-viewer-content {
+        flex:1;
+    }
+}
+
+.border-bottom {
+    border-bottom:solid thin #ccc;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    margin-top:50px;
+}
+
+.border-bottom:first-child {
+    margin-top: 0;
+}
+
+#main_map {
+    width: 100%;
+    height:450px;
+    margin-bottom:35px;
+}

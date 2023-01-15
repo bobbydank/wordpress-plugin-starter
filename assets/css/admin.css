@@ -1,0 +1,30 @@
+.main_container {
+    
+}
+
+.main_container h2 {
+    font-size:1.5rem;
+}
+
+.main_container .file-label {
+    margin-bottom:10px;
+    font-size:120%;
+    display: block;
+}
+
+.main_admin_title {
+    font-size:1.5rem;
+}
+
+.main_container .notice {
+    margin-left:0;
+}
+
+.main_container.entries {
+    padding-right:30px;
+}
+
+.main-add-new-form a[href="#"] {
+    color:#333;
+    text-decoration: none;
+}
