@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Wordpress Plugin Starter
  * Description: Plugin for the this website. Built by Bobby Danklefsen.
- * Plugin URI: https://www.bobbydank.com/
+ * Plugin URI: https://www.catchylabs.com/
  * Author: Bobby Danklefsen
  * Version: 1.0
- * Author URI: https://www.bobbydank.com/
+ * Author URI: https://www.catchylabs.com/
  *
  * Text Domain: cl_main
  *
